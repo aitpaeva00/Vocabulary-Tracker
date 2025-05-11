@@ -1,60 +1,117 @@
 
 # Vocabulary Tracker
 
-This is a simple Java console application that allows users to manage their personal vocabulary list. It supports adding, updating, deleting, and viewing vocabulary entries, along with saving and loading the vocabulary from a file.
+**Student Name**:  Aizhan Aitpaeva
 
-## Features
+## Description
 
-- Add new vocabulary words with definitions and examples
-- View all saved words
-- Update an existing word
-- Delete a word from the list
-- Generate a simple report (total word count)
-- Save and load data from a file (`vocabulary.txt`)
+The Vocabulary Tracker is a Java-based console application that helps users build and manage their English vocabulary. Users can add new words, view the complete list, update or delete existing words, and generate reports. All data is stored in a file so the vocabulary list is saved between sessions.
 
-## How It Works
+## Objectives
 
-Upon starting the application, it attempts to load the vocabulary list from a file named `vocabulary.txt`. The user is then presented with a menu of options:
+- To provide an easy-to-use vocabulary tracking system.
+- To implement file input/output operations in Java.
+- To demonstrate the use of basic Java collections (ArrayList).
+- To build user interaction using console-based menu-driven interface.
+- To reinforce object-oriented programming with custom classes.
 
-1. **Add new word** – Prompt to enter a new word, definition, and example.
-2. **View all words** – Displays all saved words in a readable format.
-3. **Update a word** – Update the definition and example for a word.
-4. **Delete a word** – Remove a word from the list.
-5. **Generate report** – Shows total number of words.
-6. **Exit** – Saves the data and exits the application.
+---
 
-### Example Data Format
+## Documentation
 
-The vocabulary is stored in the following format:
+### Data Structures Used
 
+- **ArrayList**: Stores the list of vocabulary words as `VocabularyEntry` objects.
+- **VocabularyEntry (Class)**: Represents a word, its definition, and an example sentence.
+
+### Algorithms and Methods
+
+- **Main Menu Loop**: Continuously displays options to the user until they choose to exit.
+- **saveVocabularyToFile(List)**: Saves all entries to a text file `vocabulary.txt`.
+- **loadVocabularyFromFile(List)**: Loads entries from `vocabulary.txt` into memory.
+- **Add, View, Update, Delete**: Core functions allowing manipulation of vocabulary items.
+
+### Challenges Faced
+
+- Handling file read/write errors (IOException).
+- Ensuring robust user input (e.g., handling empty strings or incorrect options).
+- Making the app intuitive with a text interface.
+
+---
+
+## Test Cases and Outputs
+
+### Test Case 1: Add Word
+
+**Input:**
 ```
-word;definition;example
+1
+happy
+Feeling or showing pleasure.
+She was happy with her exam results.
 ```
 
-Example:
+**Expected Output:**
 ```
-hello;A greeting or expression of goodwill;He said "hello" when he entered the room.
+Word added successfully!
 ```
 
-## Project Structure
+### Test Case 2: View All Words
 
-- `Main.java` – Contains the main application logic and menu interaction.
-- `VocabularyEntry.java` – Class representing a vocabulary entry (word, definition, example).
-- `vocabulary.txt` – The file where vocabulary data is saved.
+**Input:**
+```
+2
+```
 
-## Requirements
+**Expected Output:**
+```
+Your Vocabulary:
+- happy: Feeling or showing pleasure.
+  Example: She was happy with her exam results.
+```
 
-- Java Development Kit (JDK)
-- An IDE like IntelliJ IDEA or any Java-supporting editor
+### Test Case 3: Update Word
 
-## How to Run
+**Input:**
+```
+3
+happy
+Joyful and content.
+She smiled because she was joyful.
+```
 
-1. Open the project in your IDE.
-2. Compile and run `Main.java`.
-3. Use the console to interact with the vocabulary tracker.
+**Expected Output:**
+```
+Word updated successfully!
+```
 
-## Future Improvements
+### Test Case 4: Delete Word
 
-- Add search functionality.
-- Enhance file handling with error recovery.
-- Optionally switch to a database backend.
+**Input:**
+```
+4
+happy
+```
+
+**Expected Output:**
+```
+Word deleted successfully!
+```
+
+### Test Case 5: Report
+
+**Input:**
+```
+5
+```
+
+**Expected Output:**
+```
+Total words: 0
+```
+
+---
+
+## Screenshots
+
+---
