@@ -11,7 +11,7 @@ public class Main {
         List<VocabularyEntry> vocabularyList = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
 
-        // Загрузка слов при запуске программы
+
         loadVocabularyFromFile(vocabularyList);
 
         while (true) {
@@ -121,7 +121,7 @@ public class Main {
     public static void loadVocabularyFromFile(List<VocabularyEntry> vocabularyList) {
         File file = new File("vocabulary.txt");
         if (!file.exists()) {
-            return; // Нет файла — нечего загружать
+            return; 
         }
 
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
