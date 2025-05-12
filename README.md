@@ -114,4 +114,22 @@ Total words: 0
 
 ## Screenshots
 
+### 1. Add a new word 
+
+<img width="1163" alt="Снимок экрана 2025-05-11 в 23 02 17" src="https://github.com/user-attachments/assets/862522bc-b4bb-42d5-b13a-7ade15aed8d0" />
+
+### 2. View all words
+
+<img width="1278" alt="Снимок экрана 2025-05-11 в 23 02 36" src="https://github.com/user-attachments/assets/5fa39a18-edaa-4ece-9514-2f7fce5c02af" />
+
+### 3. Update word
+<img width="740" alt="Снимок экрана 2025-05-12 в 08 37 14" src="https://github.com/user-attachments/assets/f94a22a4-630c-4500-8690-300c5886c51e" />
+
+### 4. Delete word
+
+<img width="1295" alt="Снимок экрана 2025-05-11 в 23 04 25" src="https://github.com/user-attachments/assets/4010b1a7-3ddb-48b1-b369-6a0bc3958f75" />
+
+### 5. Generate report
+<img width="1268" alt="Снимок экрана 2025-05-11 в 23 05 17" src="https://github.com/user-attachments/assets/85252383-4b3d-43ca-8eab-ac51d941bbdb" />
+
 ---
